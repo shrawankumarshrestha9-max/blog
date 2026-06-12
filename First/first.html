@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shrawan Shrestha — Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- SOCIAL BAR -->
+<div class="social-bar">
+  <span class="tagline">✦ SHRAWAN SHRESTHA &nbsp;·&nbsp; KATHMANDU, NEPAL</span>
+  <div class="social-links">
+    <a class="s-fb" href="https://facebook.com" target="_blank">f</a>
+    <a class="s-ig" href="https://instagram.com" target="_blank">📷</a>
+    <a class="s-li" href="https://linkedin.com" target="_blank">in</a>
+    <a class="s-tw" href="https://twitter.com" target="_blank">𝕏</a>
+    <a class="s-gm" href="mailto:shrawan@gmail.com">✉</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="avatar">👨‍💻</div>
+  <h1>Shrawan <span>Shrestha</span></h1>
+  <div class="sub">📍 Kathmandu, Nepal &nbsp;·&nbsp; BSc CSIT Student</div>
+  <div class="header-tags">
+    <span>🖥️ Tech Knowledge</span>
+    <span>📣 Digital Marketing</span>
+    <span>🏍️ Bike &amp; Car License</span>
+    <span>🎓 BSc CSIT</span>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="active" onclick="showPage('home',this);return false;">🏠 Home</a>
+  <a href="#" onclick="showPage('blog',this);return false;">📝 Blog</a>
+  <a href="#" onclick="showPage('search',this);return false;">🔍 Search</a>
+  <a href="#" onclick="showPage('about',this);return false;">👤 About</a>
+  <a href="#" onclick="showPage('contact',this);return false;">📬 Contact</a>
+</nav>
+
+<main>
+
+  <!-- HOME -->
+  <div class="page active" id="page-home">
+
+    <div class="stats">
+      <div class="stat-box">
+        <div class="icon">📝</div>
+        <div class="num">20+</div>
+        <div class="lbl">Articles</div>
+      </div>
+      <div class="stat-box">
+        <div class="icon">🎓</div>
+        <div class="num">3rd</div>
+        <div class="lbl">Year CSIT</div>
+      </div>
+      <div class="stat-box">
+        <div class="icon">🏍️</div>
+        <div class="num">2</div>
+        <div class="lbl">Licenses</div>
+      </div>
+      <div class="stat-box">
+        <div class="icon">📣</div>
+        <div class="num">1K+</div>
+        <div class="lbl">Readers</div>
+      </div>
+    </div>
+
+    <div class="featured">
+      <div class="big-em">🎓</div>
+      <div>
+        <span class="badge">⭐ Featured Post</span>
+        <h3>Surviving BSc CSIT in Nepal — My Honest Experience</h3>
+        <p>From data structures nightmares to building your first web app — what nobody tells you before joining CSIT.</p>
+        <div class="meta">June 10, 2025 &nbsp;·&nbsp; 10 min read</div>
+      </div>
+    </div>
+
+    <div class="sec-head">
+      <h2>Latest Posts</h2>
+      <p>Tech tips, marketing tricks, road stories &amp; student life from Kathmandu 🇳🇵</p>
+    </div>
+    <div class="cards" id="homeCards"></div>
+
+  </div>
+
+  <!-- BLOG -->
+  <div class="page" id="page-blog">
+    <div class="sec-head">
+      <h2>All Posts</h2>
+      <p>Browse by category</p>
+    </div>
+    <div class="cat-filter">
+      <button class="cat-btn active" onclick="filterCat('all',this)">All</button>
+      <button class="cat-btn" onclick="filterCat('tech',this)">🖥️ Tech</button>
+      <button class="cat-btn" onclick="filterCat('digital',this)">📣 Digital Marketing</button>
+      <button class="cat-btn" onclick="filterCat('driving',this)">🏍️ Driving</button>
+      <button class="cat-btn" onclick="filterCat('csit',this)">🎓 CSIT</button>
+    </div>
+    <div class="cards" id="blogCards"></div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="page" id="page-search">
+    <div class="sec-head">
+      <h2>Search</h2>
+      <p>Find any post by keyword</p>
+    </div>
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Try: Python, SEO, license, CSIT…" oninput="doSearch()"/>
+      <button onclick="doSearch()">Search</button>
+    </div>
+    <div class="cards" id="searchCards"></div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="page" id="page-about">
+    <div class="sec-head"><h2>About Me</h2></div>
+    <div class="about-grid">
+
+      <div class="about-main">
+        <div class="av">👨‍💻</div>
+        <h2>Shrawan Shrestha</h2>
+        <div class="loc">📍 Kathmandu, Nepal</div>
+        <p>Hey! I'm Shrawan — a BSc CSIT student from Kathmandu who loves coding, digital marketing, and riding through the streets of Nepal. This blog is where I share what I learn, experience, and want you to know. Welcome! 🙏</p>
+      </div>
+
+      <div class="about-card">
+        <h4>🎓 Education</h4>
+        <ul>
+          <li>BSc CSIT — 3rd Year</li>
+          <li>Tribhuvan University, Nepal</li>
+          <li>C, Java, Python, DBMS, Networking</li>
+          <li>Web: HTML, CSS, JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h4>📣 Digital Marketing</h4>
+        <ul>
+          <li>SEO &amp; Content Strategy</li>
+          <li>Social Media Management</li>
+          <li>Google Ads Basics</li>
+          <li>Email Marketing</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h4>🏍️ Driving</h4>
+        <ul>
+          <li>Bike License Holder 🏍️</li>
+          <li>Car License Holder 🚗</li>
+          <li>Road trips around Nepal</li>
+          <li>Nepal license exam tips</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h4>🖥️ Tech Skills</h4>
+        <ul>
+          <li>Python, Java, C Programming</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>MySQL &amp; MongoDB basics</li>
+          <li>Linux &amp; Networking</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="page" id="page-contact">
+    <div class="sec-head">
+      <h2>Contact</h2>
+      <p>Have a question or just want to say namaste? 🙏</p>
+    </div>
+    <div class="contact-box">
+      <label>Your Name</label>
+      <input type="text" id="cname" placeholder="Your full name"/>
+
+      <label>Email</label>
+      <input type="email" id="cemail" placeholder="you@example.com"/>
+
+      <label>Topic</label>
+      <select id="ctopic">
+        <option value="">Choose a topic…</option>
+        <option>Tech Question</option>
+        <option>Digital Marketing</option>
+        <option>CSIT Advice</option>
+        <option>Driving / License Tips</option>
+        <option>Collaboration</option>
+        <option>Just saying Hi 👋</option>
+      </select>
+
+      <label>Message</label>
+      <textarea id="cmsg" placeholder="Write your message here…"></textarea>
+
+      <button onclick="sendMsg()">Send Message ✉️</button>
+      <div class="toast" id="toast">✅ Message sent! Shrawan will reply soon. धन्यवाद! 🙏</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2025 <span>Shrawan Shrestha</span> · Kathmandu, Nepal 🇳🇵 · Made with <span>❤️ &amp; Code</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

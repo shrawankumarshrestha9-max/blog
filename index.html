@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrawan | Glass Blog</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Blur -->
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            
+            <img src="icon.png" >
+            <h1>Shra<span>Wan</span></h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">Tech</a>
+            <a href="#">BScCSIT</a>
+            <a href="#">Food</a>
+            <a href="#">Marketing</a>
+            <a href="#">Fun</a>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero glass">
+
+        <div class="hero-content">
+
+            <h1>
+                Hi, I'm <span>Shrawan</span> 👋
+            </h1>
+
+            <p>
+                Welcome to my digital corner where I share
+                technology insights, BScCSIT notes,
+                food experiences, digital marketing ideas,
+                and fun things I discover.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn primary">
+                    Explore Blog
+                </a>
+
+                <a href="#" class="btn secondary">
+                    About Me
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="shrestha.jpg"
+                 alt="Shrawan">
+
+        </div>
+
+    </section>
+
+    <!-- Featured -->
+    <section class="featured-section">
+
+        <h2 class="section-title">
+            Featured Post
+        </h2>
+
+        <article class="glass featured-card">
+
+            <span class="badge">
+                Tech Knowledge
+            </span>
+
+            <h3>
+                How the Internet Actually Works
+            </h3>
+
+            <p>
+                From DNS to servers and TCP handshakes,
+                understand what really happens when you
+                open a website in your browser.
+            </p>
+
+            <a href="#" class="read-more">
+                Read More →
+            </a>
+
+        </article>
+
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="posts-section">
+
+        <h2 class="section-title">
+            Recent Posts
+        </h2>
+
+        <div class="post-grid">
+
+            <!-- Post 1 -->
+            <article class="glass post-card">
+                <span class="badge">BScCSIT</span>
+
+                <h3>
+                    C Programming Tips Every CSIT Student Should Know
+                </h3>
+
+                <p>
+                    Learn pointers, arrays, memory management,
+                    and practical coding habits.
+                </p>
+
+                <a href="#" class="read-more">
+                    Read More →
+                </a>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="glass post-card">
+                <span class="badge">Digital Marketing</span>
+
+                <h3>
+                    SEO Basics: Rank Your Blog on Google
+                </h3>
+
+                <p>
+                    Understand keywords, backlinks,
+                    and on-page optimization.
+                </p>
+
+                <a href="#" class="read-more">
+                    Read More →
+                </a>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="glass post-card">
+                <span class="badge">Food</span>
+
+                <h3>
+                    My Favourite Dal Bhat Variations
+                </h3>
+
+                <p>
+                    Discover delicious Dal Bhat styles
+                    from different regions of Nepal.
+                </p>
+
+                <a href="#" class="read-more">
+                    Read More →
+                </a>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="glass post-card">
+                <span class="badge">Fun</span>
+
+                <h3>
+                    Life Lessons from Fixing Cars
+                </h3>
+
+                <p>
+                    Small problems become big ones.
+                    Diagnose before taking action.
+                </p>
+
+                <a href="#" class="read-more">
+                    Read More →
+                </a>
+            </article>
+
+            <!-- Post 5 -->
+            <article class="glass post-card">
+                <span class="badge">Tech</span>
+
+                <h3>
+                    Linux Commands Every Developer Uses
+                </h3>
+
+                <p>
+                    Essential terminal commands
+                    that improve productivity.
+                </p>
+
+                <a href="#" class="read-more">
+                    Read More →
+                </a>
+            </article>
+
+            <!-- Post 6 -->
+            <article class="glass post-card">
+                <span class="badge">Marketing</span>
+
+                <h3>
+                    Social Media Strategy for Small Businesses
+                </h3>
+
+                <p>
+                    Practical ways to grow your online
+                    presence with limited resources.
+                </p>
+
+                <a href="#" class="read-more">
+                    Read More →
+                </a>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass">
+
+        <div class="footer-social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+
+        <p>
+            © <span id="year"></span>
+            Shrawan Blog • Made with ❤️ in Nepal 🇳🇵
+        </p>
+
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
